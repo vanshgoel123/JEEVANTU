@@ -27,7 +27,7 @@ const productSchema = new mongoose.Schema(
     stock: { type: Number, required: true, default: 0 },
     minStock: { type: Number, required: true, default: 5 },
     imageUrl: { type: String },
-    barcode: { type: String },
+    barcode: { type: String ,unique:true},
     // Field to store the GLB file path
     model3dFile: { type: String },
   },
