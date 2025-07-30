@@ -70,7 +70,7 @@ app.use((req, res, next) => {
 (async () => {
   const server = await registerRoutes(app);
   // Serve frontend (Vite build from frontend-dist/)
-    const frontendPath = path.join(__dirname, "Frontend","dist");
+    const frontendPath = path.join(__dirname,"dist");
     app.use(express.static(frontendPath));
   
     // Handle SPA routes (React/Vite fallback)
